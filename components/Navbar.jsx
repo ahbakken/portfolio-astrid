@@ -16,12 +16,13 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
+        <h2 className="font-serif text-[#2067b4]">AB</h2>
+        {/* <Image
           src="/../public/assets/navLogo.png"
           height="70"
           width="70"
           alt="/"
-        />
+        /> */}
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -64,12 +65,13 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between ">
-              <Image
+            <h2 className="font-serif text-[#2067b4]">AB</h2>
+              {/* <Image
                 src="/../public/assets/navLogo.png"
                 width="70"
                 height="80"
                 alt="/"
-              />
+              /> */}
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-2 cursor-pointer"
