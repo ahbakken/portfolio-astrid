@@ -3,11 +3,16 @@ import Image from 'next/image';
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
+import Link from 'next/link';
 
 const Contact = () => {
   return (
-    <div className="w-full lg:h-screen">
-      <div className="max-w-[1240] m-auto py-16 w-full">
+    <div
+      id="contact"
+      className="w-full"
+    >
+      <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-[#2067b4]">
           Contact
         </p>
@@ -16,28 +21,37 @@ const Contact = () => {
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div>
-                <img
+                <Image
                   className="rounded-xl hover:scake-105 ease-in duration-300"
-                  src="https://www.loma.org/contentassets/385e0595df0c460d8a665f3dab7131ad/contact-720-495.jpg"
+                  src="/../public/assets/contactIcon.jpg"
+                  alt="/"
+                  width={500}
+                  height={500}
                 />
               </div>
               <div>
-                <h2 className="py-5">Astrid</h2>
+                <h2 className="py-5">Contact me</h2>
                 <p className="py=2">
-                  I am avialable for hiring; freelance or fulltime.
+                  Thank you for visiting me. For further details, please contact
+                  me. I am avialable for hiring; freelance or fulltime.
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-7">Get in touch</p>
                 <div className="flex items-center justify-between py-4">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hoover:scale ease-in duration-100">
-                    <FaLinkedinIn />
+                    <Link href={'https://www.linkedin.com/in/astrid--bakken/'}>
+                      <FaLinkedinIn />
+                    </Link>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hoover:scale ease-in duration-100">
-                    <FaGithub />
+                    <Link href={'https://github.com/ahbakken'}>
+                      <FaGithub />
+                    </Link>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hoover:scale ease-in duration-100">
-                    <AiOutlineMail />
+                    <Link href="mailto:astridbakken95@gmail.com">
+                      <AiOutlineMail />
+                    </Link>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hoover:scale ease-in duration-100">
                     <BsFillPersonLinesFill />
@@ -46,6 +60,13 @@ const Contact = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center py-10">
+          <Link href="/">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hoover:scale ease-in duration-100">
+              <HiOutlineChevronDoubleUp className="text-[#2067b4]" size={30} />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

@@ -20,12 +20,12 @@ const Projects = () => {
             background={project}
             projectURL="/project"
           />
-          <ProjectItems title="Play" background={play} projectURL="/play" />
           <ProjectItems
             title="PostIt"
             background={postit}
             projectURL="/postit"
           />
+          <ProjectItems title="Play" background={play} projectURL="/play" />
         </div>
       </div>
     </div>
