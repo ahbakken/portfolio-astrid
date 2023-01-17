@@ -8,10 +8,7 @@ import Link from 'next/link';
 
 const Contact = () => {
   return (
-    <div
-      id="contact"
-      className="w-full"
-    >
+    <div id="contact" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-[#2067b4]">
           Contact
@@ -22,16 +19,16 @@ const Contact = () => {
             <div className="lg:p-4 h-full">
               <div>
                 <Image
-                  className="rounded-xl hover:scake-105 ease-in duration-300"
+                  className="rounded-xl hover:scake-105 ease-in duration-300 flex"
                   src="/../public/assets/contactIcon.jpg"
                   alt="/"
-                  width={500}
+                  width={5000}
                   height={500}
                 />
               </div>
               <div>
                 <h2 className="py-5">Contact me</h2>
-                <p className="py=2">
+                <p className="py-2">
                   Thank you for visiting me. For further details, please contact
                   me. I am avialable for hiring; freelance or fulltime.
                 </p>
@@ -52,9 +49,6 @@ const Contact = () => {
                     <Link href="mailto:astridbakken95@gmail.com">
                       <AiOutlineMail />
                     </Link>
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hoover:scale ease-in duration-100">
-                    <BsFillPersonLinesFill />
                   </div>
                 </div>
               </div>

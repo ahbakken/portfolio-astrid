@@ -4,7 +4,7 @@ import ProjectItems from './ProjectItems';
 import project from '../public/assets/projects/projects-concept.jpg';
 import play from '../public/assets/projects/play-button.jpg';
 import postit from '../public/assets/projects/to-do-postit.jpg';
-import Link from 'next/link';
+
 
 const Projects = () => {
   return (
