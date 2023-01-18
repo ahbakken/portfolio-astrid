@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useRouter } from 'next/router';
 import Router from 'next/dist/server/router';
 // rafce
@@ -13,22 +11,21 @@ const Navbar = () => {
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState('#ecf0f3');
   const [linkColor, setLinkColor] = useState('#1f2932');
-  const router = useRouter()
+  const router = useRouter();
 
-  useEffect(()=> {
+  useEffect(() => {
     if (
       router.asPath === '/project' ||
       router.asPath === '/postit' ||
       router.asPath === '/play'
-      )
-      {
-        setNavBg('transparent')
-        setLinkColor('#ecf0f3')
-      } else {
-        setNavBg('#ecf0f3')
-        setLinkColor('#1f2932')
-      }
-  }, [router])
+    ) {
+      setNavBg('transparent');
+      setLinkColor('#ecf0f3');
+    } else {
+      setNavBg('#ecf0f3');
+      setLinkColor('#1f2932');
+    }
+  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -48,7 +45,7 @@ const Navbar = () => {
 
   return (
     <div
-    style={{backgroundColor: `${navBg}`}}
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? 'fixed w-full h-20 shadow-xl z-[100]'
@@ -60,7 +57,7 @@ const Navbar = () => {
           <h2 className="font-serif text-[#2067b4]">AB</h2>
         </Link>
         <div>
-          <ul style={{color: `${linkColor}`}} className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
@@ -154,16 +151,19 @@ const Navbar = () => {
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hoover:scale ease-in duration-100">
-                  <FaLinkedinIn />
+                  <Link href={'https://www.linkedin.com/in/astrid--bakken/'}>
+                    <FaLinkedinIn />
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hoover:scale ease-in duration-100">
-                  <FaGithub />
+                  <Link href={'https://github.com/ahbakken'}>
+                    <FaGithub />
+                  </Link>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hoover:scale ease-in duration-100">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hoover:scale ease-in duration-100">
-                  <BsFillPersonLinesFill />
+                  <Link href="mailto:astridbakken95@gmail.com">
+                    <AiOutlineMail />
+                  </Link>
                 </div>
               </div>
             </div>
