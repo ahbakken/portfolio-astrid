@@ -18,6 +18,9 @@ const About = () => {
             development.
           </p>
           <p className="py-2 text-gray-600">
+            In 2018 i got a bachelor degree in biochemistry and summer 2023 I will get a <span className="text-[#2067b4] font-bold">bachelor in programming and system architecture</span>. I also work part time for Learnist with teaching kids to code through Minecraft Eductaion. This is based on Python and focuses on teaching logic and syntax for coding.
+          </p>
+          <p className="py-2 text-gray-600">
             I'm looking for opportunities to learn and grow, as well as getting to know
             new cultures and places. I am avialable for hiring; freelance or fulltime
           </p>

@@ -3,6 +3,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import Link from 'next/link';
 
+
 const Main = () => {
   return (
     <div id="home" className="w-full h-screen text-center">
@@ -18,6 +19,10 @@ const Main = () => {
           <p className="py-4 text-gray-700 max-w-[70%] m-auto">
             Welcome to my page!
           </p>
+          <Link target='_blank' href='/assets/AstridBakken_resume.pdf'>
+            <p className="py-2 text-gray-700 max-w-[70%] m-auto">Resume</p>
+          </Link>
+
           <div className="flex items-center justify-between max-w-[330px] m-auto py-5">
             <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hoover:scale ease-in duration-100">
               <Link href={'https://www.linkedin.com/in/astrid--bakken/'}>
