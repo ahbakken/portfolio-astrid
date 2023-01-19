@@ -14,9 +14,9 @@ const Main = () => {
           <h1 className="py-4 text-gray-700">
             Hello! My name is <span className="text-[#2067b4]">Astrid</span>
           </h1>
-          <h2 className="py-4 text-gray-700">Frontend developer</h2>
+          <h2 className="py-4 text-gray-700">Fullstack developer</h2>
           <p className="py-4 text-gray-700 max-w-[70%] m-auto">
-            
+            Welcome to my page!
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-5">
             <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hoover:scale ease-in duration-100">
