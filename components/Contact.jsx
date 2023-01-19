@@ -29,7 +29,7 @@ const Contact = () => {
                 <h2 className="py-5">Contact me</h2>
                 <p className="py-2">
                   Thank you for visiting me. For further details, please contact
-                  me. .
+                  me.
                 </p>
               </div>
               <div>
