@@ -16,11 +16,7 @@ const Main = () => {
           </h1>
           <h2 className="py-4 text-gray-700">Frontend developer</h2>
           <p className="py-4 text-gray-700 max-w-[70%] m-auto">
-            27 years old. Interests include: playing video games and board games
-            with my friends, reading books, playing to music and hiking. I'm a
-            beginner developer. Intending to specialize in
-            web and mobile development. I'm looking for opportunities to learn
-            and grow as well as knowing new cultures and places.
+            
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-5">
             <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hoover:scale ease-in duration-100">
