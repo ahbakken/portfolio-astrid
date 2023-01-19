@@ -20,7 +20,7 @@ const Main = () => {
             Welcome to my page!
           </p>
           <Link target='_blank' href='/assets/AstridBakken_resume.pdf'>
-            <p className="py-2 text-gray-700 max-w-[70%] m-auto">Resume</p>
+            <p className="py-2 font-bold text-[#2067b4] max-w-[70%] m-auto">Resume</p>
           </Link>
 
           <div className="flex items-center justify-between max-w-[330px] m-auto py-5">
